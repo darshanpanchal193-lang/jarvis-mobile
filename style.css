@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #102744, #030711 70%);
+  color: #67d9ff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  padding: 25px 10px;
+  border-bottom: 1px solid #174c72;
+}
+
+header h2 {
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+#status {
+  color: #00ffae;
+  font-size: 11px;
+  margin-top: 8px;
+  letter-spacing: 3px;
+}
+
+main {
+  padding: 45px 20px 25px;
+}
+
+.core {
+  width: 190px;
+  height: 190px;
+  margin: 15px auto 30px;
+  border: 3px solid #20cfff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 25px #00aaff,
+              inset 0 0 25px #008cff;
+  animation: glow 2s infinite alternate;
+}
+
+.core-inner {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #80eaff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #09294a;
+  box-shadow: 0 0 30px #00aeff;
+}
+
+.core-inner span {
+  font-size: 65px;
+  font-weight: bold;
+  text-shadow: 0 0 20px #00cfff;
+}
+
+@keyframes glow {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+.subtitle {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  color: #8cb9d5;
+}
+
+#response {
+  margin: 35px auto;
+  padding: 18px;
+  min-height: 65px;
+  max-width: 450px;
+  border: 1px solid #17658b;
+  border-radius: 12px;
+  background: #07182b;
+  color: white;
+}
+
+button, select, input {
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid #16bdf5;
+  background: #092744;
+  color: white;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  background: #0873a7;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+select {
+  width: 200px;
+  margin-bottom: 22px;
+}
+
+.chat {
+  display: flex;
+  max-width: 450px;
+  margin: auto;
+  gap: 8px;
+}
+
+.chat input {
+  width: 100%;
+  min-width: 0;
+}
+
+footer {
+  padding: 20px;
+  color: #537b99;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
